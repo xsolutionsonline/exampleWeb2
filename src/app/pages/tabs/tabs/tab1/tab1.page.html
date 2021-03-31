@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="registerForm">
+
+    <ion-item>
+      <ion-label position="floating"> Cedula </ion-label>
+      <ion-input value="cedula" type="text" formControlName= "cedula"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> Nombres  y Apellidos </ion-label>
+      <ion-input value="nombres" type="text" formControlName= "nombres"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> correo </ion-label>
+      <ion-input value="correo" type="text" formControlName= "correo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> Direccion </ion-label>
+      <ion-input value="direccion" type="text" formControlName= "direccion"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> Contraseña </ion-label>
+      <ion-input value="password" type="password" formControlName= "password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="onRegister()" expand="block" fill="clear" shape="round">
+      Registrar
+    </ion-button>
+    
+  </form>
+</ion-content>
